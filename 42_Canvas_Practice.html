@@ -1,0 +1,83 @@
+<!-- ----------------------------------------------------------------------
+Program       :Canvas Practice 
+Date          :25-08-2018
+Auther        :Sumit Patil
+Institute     :WebStack Academy (P) Ltd.
+------------------------------------------------------------------------ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Canvas Practice</title>
+    
+</head>
+<body>
+    <h1>Canvas Design</h1>
+    
+ <canvas id="canvas1" height="100" width="200" style="border:4px solid #636393"></canvas>
+ <canvas id="canvas2" height="100" width="200" style="border:4px solid #636393"></canvas>
+ <canvas id="canvas3" height="100" width="200" style="border:4px solid #636393"></canvas>
+ <canvas id="canvas4" height="100" width="200" style="border:4px solid #636393"></canvas>
+ <canvas id="canvas5" height="100" width="200" style="border:4px solid #636393"></canvas>           
+ <img id="dragan" src="6.jpg" height="100" width="150">
+ <canvas id="canvas6" height="200" width="200" style="border:4px solid #636393"></canvas>           
+ <button onclick="myCanvas()" >Img Canvas</button>
+ </body>
+<script>
+    var c=document.getElementById("canvas1");//Draw A Line
+    var ctx=c.getContext("2d");
+    ctx.moveTo(0,0);
+    ctx.lineTo(200,100);
+    ctx.stroke();
+
+    var c = document.getElementById("canvas2"); //Draw A Circle
+    var ctx = c.getContext("2d");
+    ctx.beginPath();
+    //x,y,radius,stroke,arc, of circle
+    ctx.arc(95,50,45,0,2*Math.PI);
+    ctx.stroke();
+
+    var c = document.getElementById("canvas3"); //Draw A Different Text
+    var ctx = c.getContext("2d");
+    ctx.font = "30px Arial";
+    ctx.fillText("Hello World", 22, 40);
+    ctx.strokeText("Hello World", 22, 80);
+
+    //Draw A Linear Gradient
+    var c=document.getElementById("canvas4");
+    var ctx=c.getContext("2d");
+
+    // Create gradient
+    var grd = ctx.createLinearGradient(0, 0, 200, 0);
+    grd.addColorStop(0, "red");
+    grd.addColorStop(1, "blue");
+
+    // Fill with gradient
+    ctx.fillStyle = grd;
+    //x,y,width,height
+    ctx.fillRect(10,10,150,80);
+    //-----------------------
+    //Draw Circular Gradient
+    var c = document.getElementById("canvas5");
+    var ctx = c.getContext("2d");
+
+    // Create gradient
+    var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
+    grd.addColorStop(0, "red");
+    grd.addColorStop(1, "white");
+
+    // Fill with gradient
+    ctx.fillStyle = grd;
+    ctx.fillRect(10, 10, 150, 80);
+   //-----------------
+   //Draw Image Canvas
+   function myCanvas() {
+    var c = document.getElementById("canvas6");
+    var ctx = c.getContext("2d");
+    var img = document.getElementById("dragan");
+    ctx.drawImage(img,10,1);
+}
+</script>
+</html>

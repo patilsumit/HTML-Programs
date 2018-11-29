@@ -1,0 +1,151 @@
+<!-- ----------------------------------------------------------------------
+Program       :Html Practice 2
+Date          :21-08-2018
+Auther        :Sumit Patil
+Institute     :WebStack Academy (P) Ltd.
+------------------------------------------------------------------------ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Html Practice</title>
+    <style type="text/css">
+
+ /* ul li {
+     list-style-type: none;
+ } */
+    
+  ul li:nth-child(1) a
+   {
+       width:100px;
+       height: 40px;
+       line-height: 53px;
+       border-bottom:4px solid #636393; 
+       padding-left: 5px;
+       color: #333;
+       text-decoration:none; 
+       list-style-type: none;
+       display: block; 
+       -webkit-transition: .2s all linear;
+       -moz-transition: .2s all linear;
+       -o-transition: .2s all linear;
+       transition: .2s all linear;
+    }
+    ul li a:hover
+    {
+        border-bottom:35px solid #636393; 
+        height: 5px;
+    }
+ li:nth-child(2) a
+   {
+       width:100px;
+       height: 40px;
+       line-height: 53px;
+       border-bottom:4px solid #B5222D; 
+       padding-left: 5px;
+       color: #333;
+       text-decoration: none;
+       display: block; 
+       -webkit-transition: .2s all linear;
+       -moz-transition: .2s all linear;
+       -o-transition: .2s all linear;
+       transition: .2s all linear;
+    }
+    li:nth-child(2) a:hover
+    {
+        border-bottom:35px solid #B5222D; 
+        height: 5px;
+    }
+    li:nth-child(3) a
+   {
+       width:100px;
+       height: 40px;
+       line-height: 53px;
+       border-bottom:4px solid #D4953C; 
+       padding-left: 5px;
+       color: #333;
+       text-decoration: none;
+       display: block; 
+       -webkit-transition: .2s all linear;
+       -moz-transition: .2s all linear;
+       -o-transition: .2s all linear;
+       transition: .2s all linear;
+    }
+    li:nth-child(3) a:hover
+    {
+        border-bottom:35px solid #D4953C; 
+        height: 5px;
+    }
+    li:nth-child(4) a
+   {
+       width:100px;
+       height: 40px;
+       line-height: 53px;
+       border-bottom:4px solid #609491; 
+       padding-left: 5px;
+       color: #333;
+       text-decoration: none;
+       display: block; 
+       -webkit-transition: .2s all linear;
+       -moz-transition: .2s all linear;
+       -o-transition: .2s all linear;
+       transition: .2s all linear;
+    }
+    li:nth-child(4) a:hover
+    {
+        border-bottom:35px solid #609491; 
+        height: 5px;
+    }
+    li:nth-child(5) a
+   {
+       width:100px;
+       height: 40px;
+       line-height: 53px;
+       border-bottom:4px solid #87A248; 
+       padding-left: 5px;
+       color: #333;
+       text-decoration: none;
+       display: block; 
+       -webkit-transition: .2s all linear;
+       -moz-transition: .2s all linear;
+       -o-transition: .2s all linear;
+       transition: .2s all linear;
+    }
+    li:nth-child(5) a:hover
+    {
+        border-bottom:35px solid #87A248; 
+        height: 5px;
+    }
+        </style>
+</head>
+<body>
+    <h1>Un-Order List</h1>
+    <ul>
+        <li>  <a href="#">    Sumit    </a></li>
+        <li>  <a href="#">  Lucky  </a></li>
+        <li>  <a href="#">      Veera      </a></li>
+        <li>  <a href="#">   Asmita   </a></li>
+        <li>  <a href="#">    Rahul    </a></li>
+    </ul>
+    <button onclick="hideelem()">Hide Heading</button>
+    <h1 class="city">Dhule</h1>
+    <p>Mahanagar Palika</p>
+    <h1 class="city">Jalgav</h1>
+    <p>Nagarpalika</p>
+    <h1 class="city">Nandurbar</h1>
+    <p>Mahanagar Palika</p>
+
+</body>
+<script>
+    function hideelem()
+    {
+        var x=document.getElementsByClassName("city");
+        for(i=0;i<x.length;i++)
+        {
+          x[i].style.display="none";
+        }
+    }
+    </script>
+</html>

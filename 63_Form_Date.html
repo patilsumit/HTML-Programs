@@ -1,0 +1,49 @@
+<!-- ----------------------------------------------------------------------
+Program       :Form Date Practice
+Date          :30-08-2018
+Auther        :Sumit Patil
+Institute     :WebStack Academy (P) Ltd.
+------------------------------------------------------------------------ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Date</title>
+</head>
+<body>
+    <h1>Form Date Practice</h1>
+    <form>
+    <label>
+        Enter a date after 2005-02-01 :
+        <input type="date" id="user-date" min="2005-02-01">
+    </label>    
+    <br/><br/>
+    <label>
+         Enter a Week :
+         <input type="week" id="user-week"> 
+    </label>    
+    <br/><br/>
+    <label>
+            Enter a Month  :
+            <input type="month" id="user-month"> 
+       </label><br><br>
+       <label>
+            Enter a ColorPicker  :
+            <input type="color" name=colorpicker>
+       </label><br><br>
+      <label for="color">Color:</label>
+       <input type="color" name="color" id="color" list="color-list">
+       <datalist id="color-list">
+           <option value="#ff0000"></option>
+           <option value="red">
+           <option value="#00ff00"/>
+           <option value="#ffff00"/>
+           <option value="#ffa500"/>
+        </datalist>
+
+       <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

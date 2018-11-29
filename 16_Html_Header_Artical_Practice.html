@@ -1,0 +1,158 @@
+<!-- ----------------------------------------------------------------------
+Program       :Html Header Artical Practice
+Date          :18-08-2018
+Auther        :Sumit Patil
+Institute     :WebStack Academy (P) Ltd.
+------------------------------------------------------------------------ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Header Artical </title>
+    <style type="text/css">
+    header.page-header {
+    background: no-repeat left/cover url(1.png);
+     display: flex;
+    height: 120px;
+    width: 20%;
+    min-width: 120px;
+    align-items: center;
+    color: #ff0000;
+    text-shadow: #000 0 0 .2em; 
+}
+
+  header.page-header > h1 {
+    font: bold calc(1em + 2 * (100vw - 120px) / 100) 'Dancing Script', cursive,fantasy;
+    margin:2%;
+} 
+
+main {
+    font-size-adjust: inherit;
+} 
+.forecast {
+    margin: 0;
+    padding: .3rem;
+    background-color: #eee123;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+.forecast > h1,
+.day-forecast {
+    margin: .5rem;
+    padding: .3rem;
+    font-size: 1.2rem;
+}
+
+.day-forecast {
+    background: right/contain content-box border-box no-repeat
+        url('2.png') white;
+}
+
+.day-forecast > h2,
+.day-forecast > p {
+    margin: .2rem;
+    font-size: 1rem;
+}
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column ;
+    margin: 0;
+    padding: 5px;
+    width: 20% ;
+    height: 200px;
+    
+}
+figure.fig1 {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column ;
+    margin-left: 400px; 
+
+    padding: 5px;
+    width: 20% ;
+    height: 200px;
+    
+}
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+img
+{
+    
+    height: 200px;
+}
+    </style>
+</head>
+<body>
+    <header class="page-header">
+        <!-- <h1>Sharada Infotech</h1> -->
+        
+    </header>
+    
+        <main>
+            <p>Sumit Infotech is product based as well as service based it solution.</p>
+            <p>This it Company provide SEO , Digital Marketting , 24 x 7 Support.</p>
+        </main>
+        <h2>Artical Practice</h2>
+        <article class="forecast">
+                <h1>Weather forecast for Seattle</h1>
+                <article class="day-forecast">
+                    <h2>03 March 2018</h2>
+                    <p>Rain.</p>
+                </article>
+                <article class="day-forecast">
+                    <h2>04 March 2018</h2>
+                    <p>Periods of rain.</p>
+                </article>
+                <article class="day-forecast">
+                    <h2>05 March 2018</h2>
+                    <p>Heavy rain.</p>
+                </article>
+            </article>
+            <br/>
+
+<h3>Figure And FigureTag Practice</h3>
+            <figure>
+   <img src="4.gif">   
+   <figcaption>Black Apple</figcaption>  
+   </figure> 
+   <figure class="fig1">
+    <img src="3.jpg">   
+    <figcaption>White Apple</figcaption>  
+    </figure>
+ 
+    <h3>Video Tag</h3>
+    <video controls
+     
+    src="Very.mp4"
+    poster="4.gif?x11217"
+    width="300"
+    height="200">
+ 
+</video>
+<h3>Iframe Tag</h3>
+<iframe height="300" width="300" src="Very.mp4">
+    s
+    </iframe>
+<h3>embed Tag</h3>
+  <!-- this tag used externally addad pulgin that time -->
+    <embed type="video/webm"
+    src="Very.mp4"
+    width="300"
+    height="200">
+<h3>Object</h3>
+    <object type="application/pdf"
+    data="001.pdf"
+    width="800"
+    height="200">
+</object>
+    </body>
+</html>

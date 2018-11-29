@@ -1,0 +1,95 @@
+<!-- ----------------------------------------------------------------------
+Program       :Table Tags Even Odd Practice Practice
+Date          :24-08-2018
+Auther        :Sumit Patil
+Institute     :WebStack Academy (P) Ltd.
+------------------------------------------------------------------------ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Table Tags</title>
+    <style>
+        thead
+        {
+            color: green;
+        }
+        tfoot{
+            color: red;
+            text-align: center;
+        }
+        td
+        {
+            padding: 20px;
+        }
+        tbody tr:nth-child(even)
+        {
+            background-color: aqua;
+            text-align: center;
+           
+            /* border-collapse: collapse; */
+        }
+        tbody tr:nth-child(odd)
+        {
+            background-color: brown;
+            text-align: center;
+           
+            /* border-collapse: collapse; */
+        }
+        table
+        {
+            border-collapse: collapse;
+            background-color:darksalmon;
+        }
+
+    </style>
+</head>
+<body><center>
+    <h1>Table Practice</h1>
+    <p>Welcome To <span style="height:50px;line-height: 50px;width:200px;  display: inline-block;background-color: green "> WebStack Academy </span>Center</p>
+   <fieldset>
+   <legend>Sumit Patil Full-Stack Developer</legend>
+    <table border="3" cellspacing="50" cellpadding="5" >
+            <caption style="caption-side:bottom;">Fig 1 : Employee Salary
+                </caption>
+        <thead>
+        <tr>
+            <th>Employee Name</th>
+            <th>Employee Id</th>
+            <th colspan="2" > Salary</th>
+        </tr>
+        </thead>
+        <tr>
+            <td >Sumit</td>
+            <td>123</td>
+            <td >25000</td>
+            <td >25000</td>
+        </tr>
+        <tr>
+                <td >Lucky</td>
+                <td>124</td>
+                <td colspan="2">32000</td>
+            </tr>
+            <tr>
+                     <td>Rahul</td> 
+                    <td>125</td>
+                    <td colspan="2">30000</td>
+                </tr>
+                <tr>
+                        <td>Rahul</td> 
+                       <td>125</td>
+                       <td colspan="2">30000</td>
+                   </tr>
+                <tfoot>
+                <tr>
+                        <td>Dhiraj</td>
+                        <td>126</td>
+                        <td colspan="2">28000</td>
+                    </tr>
+               </tfoot>
+    </table>
+   </fieldset>
+</body>
+</html>

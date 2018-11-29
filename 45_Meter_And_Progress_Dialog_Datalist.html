@@ -1,0 +1,63 @@
+<!-- ----------------------------------------------------------------------
+Program       :Meter And Practice Practice 
+Date          :25-08-2018
+Auther        :Sumit Patil
+Institute     :WebStack Academy (P) Ltd.
+------------------------------------------------------------------------ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meter & Progress</title>
+</head>
+<body>
+    <h1>Prgress Bar</h1>
+        <progress max="1500" value="1400">1400/1500</progress><br>
+        <h2>Meter Bar</h2>
+        <meter min="0" max="100" value="50" low="35" high="80" optimum="100">75</meter>
+
+        <h3>Datalist</h3>
+        <input list="flower">
+        <datalist id="flower">
+            <option >sumit</option>
+            <option>lucky</option>
+            <option>rahul</option>
+            <option>asmita</option>
+            <option>veera</option>
+        </datalist>
+  <h1>YouTube Videos Embed</h1>
+        <iframe width="420" height="315"
+         src="https://www.youtube.com/embed/tgbNymZ7vqY"> 
+       </iframe>
+  <br>
+  <h1>Dialog Tag</h1>
+       <dialog id="myFirstDialog" style="width:50%;background-color:#F4FFEF;border:1px dotted black;">  
+            <p><q>I am so Happy that sometimes I don't understand a single word of what I am saying.   
+            </q> - <cite>Sumit Patil,FullStack Developer</cite></p>  
+            <button id="hide">Close</button>  
+            </dialog>  
+            <button id="show">Show Dialog</button>
+            
+        <h1>Details Tag</h1>
+        <details>  
+                <summary>Copyright 2011-2014.</summary>  
+                <p> - by JavaTpoint. All Rights Reserved.</p>  
+                <p>All content and graphics on this web site are the property of the javatpoint.com</p>  
+                </details>  
+                <p><b>Note:</b> The details tag is currently only supported in Opera, Chrome, and in Safari 6.</p>  
+       
+</body>
+<script>
+    (function() {    
+    var dialog = document.getElementById('myFirstDialog');    
+    document.getElementById('show').onclick = function() {    
+        dialog.show();    
+    };    
+    document.getElementById('hide').onclick = function() {    
+        dialog.close();    
+    };    
+})(); 
+</script>
+</html>

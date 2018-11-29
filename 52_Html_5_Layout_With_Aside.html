@@ -1,0 +1,72 @@
+<!-- ----------------------------------------------------------------------
+Program       :Page Layout With Aside
+Date          :27-08-2018
+Auther        :Sumit Patil
+Institute     :WebStack Academy (P) Ltd.
+------------------------------------------------------------------------ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Page Layout</title>
+    <style>
+        header,footer
+        {
+           padding: 1em;
+           color: white;
+           background-color: black;
+           clear: left;
+           text-align: center;
+
+        }
+        
+        article
+        {
+              max-width: 70%;
+              height: 400px;
+              padding: 1em;
+              overflow: hidden;
+              float: left;
+        }
+        aside
+        {
+            border-left: 1px solid gray;
+            height: 400px;
+            padding: 1em;
+            overflow: hidden;
+        }
+        aside li a 
+        {
+            text-decoration: none;
+        }
+        footer
+        {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+    <header >
+        <h1>States</h1>
+    </header>
+    </nav>
+    <article>
+        <h1>Gujarat</h1>
+        <p>Marriage is a highly auspicious occasion in Indian culture. According to the Vedas, the Hindu scriptures, marriage is a sacred lifelong commitment between a man and a woman. It is considered to be the strongest of all social bonds and is the initiation into a lifetime of togetherness.</p>
+        <p>Marriage is a highly auspicious occasion in Indian culture. According to the Vedas, the Hindu scriptures, marriage is a sacred lifelong commitment between a man and a woman. It is considered to be the strongest of all social bonds and is the initiation into a lifetime of togetherness.</p>
+    </article>    
+    <aside >
+        <h1>State Names</h1>
+          <li type="square"><a href="">Gujarat</a></li>
+          <li type="square"><a href="">Maharastra</a></li>
+          <li type="square"><a href="">Rajsthan</a></li>
+          <li type="square"><a href="">Uttar Pradesh</a></li>
+    </aside>   
+    <footer>
+        sumitpatil.co.in
+    </footer>
+</body>
+</html>

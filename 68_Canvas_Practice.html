@@ -1,0 +1,56 @@
+<!-- ----------------------------------------------------------------------
+Program       :Canvas Practice 
+Date          :31-08-2018
+Auther        :Sumit Patil
+Institute     :WebStack Academy (P) Ltd.
+------------------------------------------------------------------------ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Canvas Practice</title>
+</head>
+<body>
+    <canvas id="canvas1" width="300" height="200" style="border:2px solid #d3d3d3"></canvas>    
+    <canvas id="canvas2" width="300" height="200" style="border:2px solid #d3d3d3"></canvas>    
+    <canvas id="canvas3" width="300" height="200" style="border:2px solid #d3d3d3"></canvas>    
+</body>
+<script>
+    var a=document.getElementById("canvas1");
+
+    var ctx=a.getContext('2d');
+    ctx.moveTo(0,0);
+    ctx.lineTo(300,200);
+    ctx.lineWidth=20;
+    ctx.strokeStyle="red";
+    // ctx.lineCap="round";
+    ctx.stroke();
+
+    //---------------------
+    var a=document.getElementById("canvas2");
+
+    a.width=window.innerHeight;
+    a.height=window.innerHeight;
+    var ctx=a.getContext('2d');
+    //x,y,width,height
+    ctx.fillRect(100,100,100,100);
+    ctx.fillStyle="red";
+    ctx.fillRect(400,100,100,100);
+    ctx.fillStyle="green";
+    ctx.fillRect(280,350,100,100);
+    ctx.fillStyle="lightblue";
+
+    //----------------
+    var a=document.getElementById("canvas3");
+
+    var ctx=a.getContext('2d');
+    ctx.moveTo(20,10);
+    ctx.lineTo(200,100);
+    ctx.lineWidth=20;
+    ctx.strokeStyle="gray";
+    ctx.lineCap="round";
+    ctx.stroke();
+</script>   
+</html>
